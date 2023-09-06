@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <style type="text/css">
+        .form-style-4{
+            width: 450px;
+            font-size: 16px;
+            background: #495C70;
+            padding: 30px 30px 15px 30px;
+            border: 5px solid #53687E;
+        }
+        .form-style-4 input[type=submit],
+        .form-style-4 input[type=button],
+        .form-style-4 input[type=text],
+        .form-style-4 input[type=email],
+        .form-style-4 textarea,
+        .form-style-4 label
+        {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 16px;
+            color: #fff;
+        
+        }
+        .form-style-4 label {
+            display:block;
+            margin-bottom: 10px;
+        }
+        .form-style-4 label > span{
+            display: inline-block;
+            float: left;
+            width: 150px;
+        }
+        .form-style-4 input[type=text],
+        .form-style-4 input[type=email] 
+        {
+            background: transparent;
+            border: none;
+            border-bottom: 1px dashed #83A4C5;
+            width: 275px;
+            outline: none;
+            padding: 0px 0px 0px 0px;
+            font-style: italic;
+        }
+        .form-style-4 textarea{
+            font-style: italic;
+            padding: 0px 0px 0px 0px;
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px dashed #83A4C5;
+            width: 275px;
+            overflow: hidden;
+            resize:none;
+            height:20px;
+        }
+        
+        .form-style-4 textarea:focus, 
+        .form-style-4 input[type=text]:focus,
+        .form-style-4 input[type=email]:focus,
+        .form-style-4 input[type=email] :focus
+        {
+            border-bottom: 1px dashed #D9FFA9;
+        }
+        
+        .form-style-4 input[type=submit],
+        .form-style-4 input[type=button]{
+            background: #576E86;
+            border: none;
+            padding: 8px 10px 8px 10px;
+            border-radius: 5px;
+            color: #A8BACE;
+        }
+        .form-style-4 input[type=submit]:hover,
+        .form-style-4 input[type=button]:hover{
+        background: #394D61;
+        }
+        </style>
+    <body>
+        
+        <h1 style="background-color: rgb(255, 234, 0);">This is heading 1</h1>
+        <h2 style="color: rgb(13, 240, 104);">This is heading 1</h1>
+        <h3>This is heading 2</h1>
+        <h4>This is heading 3</h1>
+        <h5>This is heading 4</h1>
+        <h6>This is heading 5</h1>
+         <p>
+            <b>Lorem ipsum</b>dolor sit amet consectetur, adipisicing elit. <em>Laborum molestiae officiis</em> , praesentium aliquid vitae placeat voluptatum eaque, <i>fugit ipsum</i> , blanditiis quos deleniti culpa provident ex rem dolores quae nihil voluptates nisi quibusdam ut. Molestiae tempora blanditiis exercitationem rerum placeat amet quam sit atque officia, consectetur animi commodi accusamus dicta fugit minus quidem eveniet odio obcaecati labore quae reprehenderit repellat! Tenetur rem obcaecati iusto iste saepe enim, nesciunt placeat esse pariatur, est facilis hic. Molestias id quos accusamus voluptatibus assumenda enim ea eligendi eius, earum consectetur expedita, inventore dignissimos mollitia in laborum qui obcaecati esse vitae cupiditate atque placeat. Ratione, quod?</p>
+            <a href="https://www.google.com">goole</a>
+            <img src="images/aesthetic abstract.jpg" alt="aesthetic abstract">
+            <table>
+                <tr>
+                    <th>company</th>
+                    <th>contact</th>
+                    <th>country</th>
+                </tr>
+                <tr>
+                    <th>LPU</th>
+                    <th>123456789</th>
+                    <th>Philippines</th>
+                </tr>
+                <tr>
+                    <th>LETRAN</th>
+                    <th>987654321</th>
+                    <th>JAPAN</th>
+                </tr>
+            </table>
+            <h3>An unordered list</h2>
+            <ul>
+                <li>water</li>
+                <li>juice</li>
+                <li>milktea</li>
+                <li>soda</li>
+                <li>coffee</li>
+            </ul>
+            <h3>how to make a cake?</h3>
+            <ol>
+                <li>1. 1.	Preheat the oven at 180°C.</li>
+                <li>2. 	Add the egg mixture until combined.</li>
+                <li>3.	Add the sugar mixture until homogenous</li>
+            </ol>
+            <h3>HTML form</h3>
+            <form action="">
+                <label for="">first name</label><br>
+                <input type="text" name="fname" placeholder="Input First name" /><br>
+                <label for="">password</label><br>
+                <input type="password" name="pwd" placeholder="Input password" />
+            </form>
+            <form class="form-style-4" action="" method="post">
+                <label for="field1">
+                <span>Enter Your Name</span><input type="text" name="field1" required="true" />
+                </label>
+                <label for="field2">
+                <span>Email Address</span><input type="email" name="field2" required="true" />
+                </label>
+                <label for="field3">
+                <span>Short Subject</span><input type="text" name="field3" required="true" />
+                </label>
+                <label for="field4">
+                <span>Message to Us</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                </label>
+                <label>
+                <span> </span><input type="submit" value="Send Letter" />
+                </label>
+                </form>
+                
+    </body>
+    </html>    
+</body>
+</html>

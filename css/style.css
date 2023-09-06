@@ -1,0 +1,11 @@
+h2{
+    background-color: rgb(134, 47, 44);
+    color: brown;
+    text-align: center;
+    font-size: 120px;
+}
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    border-style: dotted;
+  }
